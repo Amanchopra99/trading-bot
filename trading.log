@@ -1,0 +1,18 @@
+2026-03-19 14:46:21,334 - INFO - Request: BTCUSDT BUY MARKET 0.001 None
+2026-03-19 14:46:21,588 - ERROR - Error: APIError(code=-4164): Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-03-19 14:47:36,157 - INFO - Request: BTCUSDT BUY MARKET 0.002 None
+2026-03-19 14:47:36,782 - INFO - Response: {'orderId': 12876688883, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJf3a9365dcc466ad2d58fe8', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773911856655}
+2026-03-19 14:48:32,069 - INFO - Request: BTCUSDT SELL LIMIT 0.002 60000.0
+2026-03-19 14:48:32,639 - ERROR - Error: APIError(code=-4024): Limit price can't be lower than 66504.18.
+2026-03-19 14:48:47,302 - INFO - Request: BTCUSDT SELL LIMIT 0.002 65000.0
+2026-03-19 14:48:47,942 - ERROR - Error: APIError(code=-4024): Limit price can't be lower than 66505.77.
+2026-03-19 14:49:17,945 - INFO - Request: BTCUSDT SELL LIMIT 0.002 66606.0
+2026-03-19 14:49:18,662 - INFO - Response: {'orderId': 12876711132, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ18bac6cfc3188ee3540651', 'price': '66606.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773911958475}
+2026-03-19 14:51:30,556 - INFO - Request: BTCUSDT BUY MARKET 0.002 None
+2026-03-19 14:51:31,171 - INFO - Response: {'orderId': 12876737758, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ2b9e504cd03430b6c31d69', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773912091075}
+2026-03-19 14:51:38,852 - INFO - Request: BTCUSDT SELL LIMIT 0.002 60000.0
+2026-03-19 14:51:39,125 - ERROR - Error: APIError(code=-4024): Limit price can't be lower than 66661.5.
+2026-03-19 14:51:55,733 - INFO - Request: BTCUSDT SELL LIMIT 0.002 67000.0
+2026-03-19 14:51:56,155 - INFO - Response: {'orderId': 12876739605, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ1cc5f236db5ad15aca6c0b', 'price': '67000.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773912115919}
+2026-03-19 14:52:22,889 - INFO - Request: BTCUSDT SELL LIMIT 0.002 60000.0
+2026-03-19 14:52:23,425 - ERROR - Error: APIError(code=-4024): Limit price can't be lower than 66802.77.
