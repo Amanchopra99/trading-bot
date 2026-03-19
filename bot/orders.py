@@ -1,8 +1,8 @@
 import logging
 
-def place_order(client, symbol, side, order_type, quantity, price=None):
+def place_order(client, symbol, side, order_type, quantity, price=None, stop_price=None):
     try:
-        logging.info(f"Request: {symbol} {side} {order_type} {quantity} {price}")
+        logging.info(f"Request: {symbol} {side} {order_type} {quantity} price={price} stop_price={stop_price}")
 
         if order_type == "MARKET":
             order = client.futures_create_order(
@@ -12,7 +12,10 @@ def place_order(client, symbol, side, order_type, quantity, price=None):
                 quantity=quantity
             )
 
-        else:
+        elif order_type == "LIMIT":
+            if price is None:
+                raise ValueError("LIMIT order requires price")
+
             order = client.futures_create_order(
                 symbol=symbol,
                 side=side,
@@ -21,6 +24,21 @@ def place_order(client, symbol, side, order_type, quantity, price=None):
                 price=price,
                 timeInForce="GTC"
             )
+
+        elif order_type == "STOP":
+            if stop_price is None:
+                raise ValueError("STOP order requires stop_price")
+
+            order = client.futures_create_order(
+                symbol=symbol,
+                side=side,
+                type="STOP_MARKET",
+                stopPrice=stop_price,
+                quantity=quantity
+            )
+
+        else:
+            raise ValueError("Invalid order type")
 
         logging.info(f"Response: {order}")
         return order

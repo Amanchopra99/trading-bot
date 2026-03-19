@@ -14,6 +14,7 @@ def main():
     parser.add_argument("--type", required=True)
     parser.add_argument("--quantity", type=float, required=True)
     parser.add_argument("--price", type=float)
+    parser.add_argument("--stop_price", type=float)
 
     args = parser.parse_args()
 
@@ -28,7 +29,8 @@ def main():
             args.side,
             args.type,
             args.quantity,
-            args.price
+            args.price,
+            args.stop_price
         )
 
         print("\n✅ ORDER SUCCESS")

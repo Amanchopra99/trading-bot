@@ -16,3 +16,11 @@
 2026-03-19 14:51:56,155 - INFO - Response: {'orderId': 12876739605, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ1cc5f236db5ad15aca6c0b', 'price': '67000.00', 'avgPrice': '0.00', 'origQty': '0.002', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1773912115919}
 2026-03-19 14:52:22,889 - INFO - Request: BTCUSDT SELL LIMIT 0.002 60000.0
 2026-03-19 14:52:23,425 - ERROR - Error: APIError(code=-4024): Limit price can't be lower than 66802.77.
+2026-03-19 15:44:00,005 - INFO - Request: BTCUSDT BUY STOP 0.002 price=None stop_price=65000.0
+2026-03-19 15:44:00,564 - ERROR - Error: APIError(code=-2021): Order would immediately trigger.
+2026-03-19 15:44:45,694 - INFO - Request: BTCUSDT BUY STOP 0.002 price=None stop_price=65000.0
+2026-03-19 15:44:45,963 - ERROR - Error: APIError(code=-2021): Order would immediately trigger.
+2026-03-19 15:48:07,607 - INFO - Request: BTCUSDT BUY STOP 0.002 price=None stop_price=70000.0
+2026-03-19 15:48:08,175 - ERROR - Error: APIError(code=-2021): Order would immediately trigger.
+2026-03-19 15:50:07,418 - INFO - Request: BTCUSDT BUY STOP 0.002 price=None stop_price=85858.0
+2026-03-19 15:50:07,714 - INFO - Response: {'algoId': 1000000029443815, 'clientAlgoId': 'x-Cb7ytekJa80aefa3c0fa4124dc3096', 'algoType': 'CONDITIONAL', 'orderType': 'STOP_MARKET', 'symbol': 'BTCUSDT', 'side': 'BUY', 'positionSide': 'BOTH', 'timeInForce': 'GTC', 'quantity': '0.002', 'algoStatus': 'NEW', 'triggerPrice': '85858.00', 'price': '0.00', 'icebergQuantity': None, 'selfTradePreventionMode': 'EXPIRE_MAKER', 'workingType': 'CONTRACT_PRICE', 'priceMatch': 'NONE', 'closePosition': False, 'priceProtect': False, 'reduceOnly': False, 'createTime': 1773915607616, 'updateTime': 1773915607632, 'triggerTime': 0, 'goodTillDate': 0}
