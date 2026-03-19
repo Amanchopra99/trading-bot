@@ -99,3 +99,8 @@ Avg Price: XXXXX
 
 * API keys are stored securely using environment variables
 * `.env` file is excluded from version control
+
+## UI
+* A Streamlit UI is included for easier interaction.
+* Run UI
+* streamlit run ui.py
